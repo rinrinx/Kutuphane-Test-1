@@ -81,7 +81,7 @@ DATABASE_URI = environ.get('DATABASE_URI', "")
 # db url.
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 # db ismi. db oluştururken Cluster0 diye bıraktıysan elleme.
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'dosyalar')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'kutuphane')
 # db koleksiyon ismi. hiç elleme sorun çıkmaz.
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
 # kendi kullanıcı idnizi verin geçin.
@@ -114,7 +114,7 @@ logging.info(f"WELCOME_SELF_JOINED: {str(WELCOME_SELF_JOINED)}")
 CAPTION_SPLITTER = environ.get("CAPTION_SPLITTER", ' 🔥 ')
 logging.info(f"CAPTION_SPLITTER: {str(CAPTION_SPLITTER)}")
 # ben bunu kullanıyorum: ' 🔥 ' sebep: daha fazla caption gözüksün. istersen: '\n'
-SHARE_BUTTON_TEXT = environ.get('SHARE_BUTTON_TEXT', 'Denemeni öneririm: {username}')
+SHARE_BUTTON_TEXT = environ.get('SHARE_BUTTON_TEXT', 'Beni Paylaş: {username}')
 # dosya altındaki paylaş butonu...
 REQUEST_LINK = is_enabled(environ.get("REQUEST_LINK", True))
 logging.info(f"REQUEST_LINK: {str(REQUEST_LINK)}")
@@ -135,14 +135,11 @@ defstarttxt = """Esenlikler {}, ben <a href=https://t.me/{}>{}</a>.
 Bana özelden yaz. /start yazsan yeterli.
 Ya bana bir kitap adı gönder,
 Ya da ara butonuna tıklayınca kitap adını yazmaya başla.
-Yapamadın mı? Diğelerine bakarak kopya çek.
 
 🔥 Boşluklarla aratsan daha iyi olur:
 Örnek: "nihalatsız ruh-adam.pdf" gibi yazma.
 Şöyle yaz: "nihal atsız ruh adam"
 Şöyle yaz: "ruh adam pdf"
-Nokta tire gibi şeyler kullanmıyoruz.
-Onun yerine boşluk koyuyoruz.
 
 🔥 Ne kadar az şey yazarsan o kadar çok sonuç çıkar:
 Örnek: "celal şengör dahi diktatör" gibi yazma.
@@ -162,7 +159,7 @@ if not len(LINK_FOR_EVERYTHING) == 0:
     START_TXT += f"\n🔥 Oku: {LINK_FOR_EVERYTHING}"
 
 
-LINK_FOR_ABOUT_PIC = environ.get('LINK_FOR_ABOUT_PIC', 'https://telegra.ph/file/375b69b135524990cb7ca.jpg')
+LINK_FOR_ABOUT_PIC = environ.get('LINK_FOR_ABOUT_PIC', 'https://telegra.ph/file/d2e91649376321a215d14.jpg')
 # about kısmındaki foto linki.
 defabout = f"[🔥]({LINK_FOR_ABOUT_PIC})" + " {}\n\n" + \
     "Anonim kişiler tarafından geliştirildi.\n" + \
