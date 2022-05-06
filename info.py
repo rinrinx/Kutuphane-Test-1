@@ -131,24 +131,24 @@ logging.info(f"GEN_CHAT_LINK_DELAY: {str(GEN_CHAT_LINK_DELAY)}")
 WELCOME_TEXT = environ.get('WELCOME_TEXT', 'Esenlikler {}. Hoş Geldin Sefa Geldin.')
 # link vb. girilebilir.
 
-defstarttxt = """Esenlikler {}, ben <a href=https://t.me/{}>{}</a>.
-Bana özelden yaz. /start yazsan yeterli.
-Ya bana bir kitap adı gönder,
-Ya da ara butonuna tıklayınca kitap adını yazmaya başla.
-
-🔥 Boşluklarla aratsan daha iyi olur:
-Örnek: "nihalatsız ruh-adam.pdf" gibi yazma.
-Şöyle yaz: "nihal atsız ruh adam"
-Şöyle yaz: "ruh adam pdf"
-
-🔥 Ne kadar az şey yazarsan o kadar çok sonuç çıkar:
-Örnek: "celal şengör dahi diktatör" gibi yazma.
-Şöyle yaz: "dahi diktatör"
-Şöyle yaz: "dahi diktatör epub"
-
-🔥 Eğer Türkçe terimler çalışmazsa Türkçe karakterleri çıkar:
-Örnek: "celal şengör dahi diktatör" gibi yazma.
-Şöyle yaz: "celal sengor dahi diktator"
+defstarttxt = """Merhaba {}, Ben <a href=https://t.me/{}>{}</a>.
+⊙ Bana özelden yaz. /start yazsan yeterli.
+⊙ Ya bana bir kitap adı gönder,
+⊙ Ya da ara butonuna tıklayınca kitap adını yazmaya başla.
+ ------------------------
+⊙ Boşluklarla aratsan daha iyi olur:
+⊙ Örnek: "nihalatsız ruh-adam.pdf" gibi yazma.
+⊙ Şöyle yaz: "nihal atsız ruh adam"
+⊙ Şöyle yaz: "ruh adam pdf"
+ ------------------------
+⊙ Ne kadar az şey yazarsan o kadar çok sonuç çıkar:
+⊙ Örnek: "celal şengör dahi diktatör" gibi yazma.
+⊙ Şöyle yaz: "dahi diktatör"
+⊙ Şöyle yaz: "dahi diktatör epub"
+ ------------------------
+⊙ Eğer Türkçe terimler çalışmazsa Türkçe karakterleri çıkar:
+⊙ Örnek: "celal şengör dahi diktatör" gibi yazma.
+⊙ Şöyle yaz: "celal sengor dahi diktator"
 """
 
 LINK_FOR_EVERYTHING = environ.get('LINK_FOR_EVERYTHING', '')
